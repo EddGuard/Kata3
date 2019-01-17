@@ -4,7 +4,9 @@
  * and open the template in the editor.
  */
 package kata3;
-
+/*
+* Author: EddGuard (Eduardo Santana)
+*/
 
 public class Kata3 {
 
