@@ -10,9 +10,19 @@ package kata3;
 
 public class Kata3 {
 
-    public static void main(String[] args) {      
-        HistogramDisplay histo;
-        histo = new HistogramDisplay();
-        histo.execute();
+    public static void main(String[] args) {     
+        Histogram<String> histogram = new Histogram<>();
+        histogram.increment("google.com");
+        histogram.increment("ulpgc.es");
+        histogram.increment("hotmail.com");
+        histogram.increment("hotmail.com");
+        histogram.increment("hotmail.com");
+        histogram.increment("ulpgc.es");
+        histogram.increment("ulpgc.es");
+        histogram.increment("ulpgc.es");
+        histogram.increment("google.com");
+        histogram.increment("google.com");
+        histogram.increment("google.com");
+        new HistogramDisplay(histogram).execute();
     }
 }
